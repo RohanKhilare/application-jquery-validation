@@ -1,0 +1,142 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <form id="registration_form">
+    <div class="container">
+      <center>
+        <h1> Student Registration Form</h1>
+      </center>
+      <hr>
+      <input type="button" id="btn_Personal" class="sectionHead" value="Personal Info"> </input>
+      <div id="personalDetails">
+
+
+        <div class="fieldDiv">
+          <label> firstname: </label>
+          <input type="text" name="firstname" placeholder="firstname" id="form_fname" required="" />
+          <span id="fname_error_message"></span>
+        </div>
+
+
+        <div class="fieldDiv">
+          <label>  Middlename: </label>
+          <input type="text" name="middlename" placeholder=" Middlename" id="form_mname" required="" />
+          <span id="mname_error_message"></span>
+        </div>
+
+        <div class="fieldDiv">
+          <label>  Lastname: </label>
+          <input type="text" name="lastname" placeholder=" Lastname" id="form_lname" required="" />
+          <span id="lname_error_message"></span>
+        </div>
+
+
+        <div class="fieldDiv">
+          <label>
+                        Course :
+                    </label>
+
+          <select id="courseDD">
+                        <option value="Course">Select</option>
+                        <option value="BCA" selected>BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                    </select>
+
+
+        </div>
+        <div>
+          <label>
+                        Gender :
+                    </label><br>
+          <input type="radio" value="Male" name="gender" checked> Male
+          <input type="radio" value="Female" name="gender"> Female
+          <input type="radio" value="Other" name="gender"> Other
+        </div>
+      </div>
+
+
+
+      <input type="button" id="contactInfoDetails"   class="sectionHead" value="Contact Info">
+      </input>
+      <div id="contactDetails">
+
+        <div class="fieldDiv">
+          <label>
+                        Country :
+                    </label>
+
+          <select id="countryDD">
+                        <option value="">Select</option>
+                        <option value="+91" selected>India</option>
+                        <option value="+44">UK</option>
+                        <option value="+1">USA</option>
+                        <option value="+971">UAE</option>
+                        <option value="+49">Germany</option>
+                        <option value="+7">Russia</option>
+                        <option value="+81">Japan</option>
+                    </select>
+          <label id="countryCodeLbl"></label>
+        </div>
+
+        <div class="fieldDiv">
+          <label>
+                        Mobile Number :
+                    </label>
+          <input type="text" id="form_mnumber" name="phone" required="">
+          <span class="error_form" id="mnumber_error_message"></span>
+        </div>
+
+        <div class="fieldDiv">
+          <label>
+                        Current Address :
+                    </label>
+          <textarea cols="80" rows="5" name="address" placeholder="Current Address" value="address">
+                 </textarea>
+        </div>
+      </div>
+
+      <input type="button" id="btn_LoginDetails" class="sectionHead" value="Login Details"> </input>
+      <div id="loginDetails">
+
+        <div class="fieldDiv">
+          <label>Email id</label>
+          <input type="email" id="form_email" name="email" required="">
+          <span class="error_form" id="email_error_message"></span>
+
+        </div>
+        <div class="fieldDiv">
+          <label>Password</label>
+
+          <input type="password" id="form_password" name="psw" required="">
+          <span class="error_form" id="password_error_message"></span>
+
+        </div>
+        <div class="fieldDiv">
+          <label>Re-Enter Password</label>
+          <input type="password" id="form_retype_password" name="psw-repeat" required="">
+          <span class="error_form" id="retype_password_error_message"></span>
+
+        </div>
+      </div>
+
+
+
+
+      <input type="button" class="registerbtn" value="Register"></input>
+
+  </form>
+
+</body>
+
+</html>

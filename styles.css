@@ -1,0 +1,85 @@
+h1 {
+  text-align: center;
+  background-color: rgb(170, 249, 255);
+  border-style: solid;
+  border-color: blueviolet;
+  border-radius: 10px;
+  color: rgb(114, 8, 8);
+  font-size: 40px;
+  margin-right: -22px;
+
+}
+
+
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+
+.container {
+  padding: 50px;
+  background-color: lightblue;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.fieldDiv {
+  margin: 10px 0 20px 0;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+  font-size: 15px;
+
+}
+
+div {
+  padding: 1px 0px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.sectionHead {
+  background-color: orange;
+  font-size: 20px;
+  color: white;
+  padding: 16px 20px;
+  border: solid black 1px;
+  margin: 2px;
+  cursor: pointer;
+  width: 102%;
+  opacity: 0.9;
+}
+
+.registerbtn {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  padding: 16px 20px;
+  margin: 2px;
+  border: solid black 1px;
+  cursor: pointer;
+  width: 102%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+span {
+  color: red;
+}
